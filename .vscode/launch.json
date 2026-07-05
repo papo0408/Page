@@ -4,13 +4,17 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-        
         {
-            "type": "editor-browser",
+            "name": "PowerShell Attach to Host Process",
+            "type": "PowerShell",
+            "request": "attach"
+        },
+        {
+            "type": "chrome",
             "request": "launch",
-            "name": "Open productos.html",
-            "url": "file:///c%3A/Users/denis/OneDrive/Desktop/Trabajo-Practico/productos.html"
+            "name": "Abrir productos.html",
+            "file": "${workspaceFolder}/productos.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
